@@ -8,6 +8,7 @@ const targetUrl = 'https://bot1-3bn8.onrender.com'; // Replace with the URL of t
 async function keepAlive() {
   try {
     await axios.get(targetUrl);
+    await axios.get('https://inidev.co.uk')
     console.log(`Successfully pinged ${targetUrl} at ${new Date().toISOString()}`);
   } catch (error) {
     console.error(`Error pinging ${targetUrl}:`, error);
